@@ -1,0 +1,9 @@
+CREATE DATABASE minichat CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE minichat;
+
+CREATE TABLE messages (
+  id INT(3) NOT NULL AUTO_INCREMENT,
+  pseudo VARCHAR(20) NOT NULL,
+  message VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=INNODB;
